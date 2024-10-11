@@ -15,7 +15,7 @@ int main()
     // Personal information
     printf(" --- PERSONAL INFORMATION ---\n");
     printf("ENTER CUSTOMER NAME: ");
-    fgets(name, sizeof(name), stdin);  // Read a line including spaces
+    scanf("%[^\n]",&name);  // Read a line including spaces
     printf("ENTER VALID PHONE NUMBER: ");
     scanf("%ld", &phone); // Correct format specifier for long
     getchar();  // Consume the newline left by scanf
